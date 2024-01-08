@@ -23,6 +23,7 @@ return {
       "gitignore",
       "tsx",
       "typescript",
+      "yaml",
     },
     -- Setting additional_vim_regex_highlighting to true will run `:h syntax` and
     -- tree-sitter at the same time with a preformance impact. instead of true it
