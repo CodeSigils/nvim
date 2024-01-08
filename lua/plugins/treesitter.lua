@@ -24,6 +24,9 @@ return {
       "tsx",
       "typescript",
     },
+    -- Setting additional_vim_regex_highlighting to true will run `:h syntax` and
+    -- tree-sitter at the same time with a preformance impact. instead of true it
+    -- can also be a list og languages
     highlight = { enable = true, additional_vim_regex_highlighting = { "org" } },
     indent = { enable = true },
     incremental_selection = {
