@@ -143,6 +143,8 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        "html-lsp",
+        "json-lsp",
         "stylua",
         "shellcheck",
         "shfmt",
