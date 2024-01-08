@@ -24,9 +24,8 @@ return {
       "tsx",
       "typescript",
     },
-    highlight = { enable = true },
+    highlight = { enable = true, additional_vim_regex_highlighting = { "org" } },
     indent = { enable = true },
-    additional_vim_regex_highlighting = { "org" },
     incremental_selection = {
       enable = true,
       keys = {
