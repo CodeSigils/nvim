@@ -12,6 +12,7 @@ return {
       "lua",
       "markdown",
       "markdown_inline",
+      "org",
       "python",
       "query",
       "regex",
@@ -25,6 +26,7 @@ return {
     },
     highlight = { enable = true },
     indent = { enable = true },
+    additional_vim_regex_highlighting = { "org" },
     incremental_selection = {
       enable = true,
       keys = {

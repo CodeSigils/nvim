@@ -13,7 +13,7 @@ return {
 
     nvimtree.setup({
       view = {
-        width = 20,
+        width = 30,
       },
       filters = {
         custom = { ".DS_Store" },

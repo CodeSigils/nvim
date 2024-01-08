@@ -80,7 +80,6 @@ return {
   },
 
   -- TODO: investigate missing required fields
-  -- FIX: lua errors
   -- add pyright to lspconfig
   {
     "neovim/nvim-lspconfig",
