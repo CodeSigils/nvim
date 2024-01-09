@@ -6,6 +6,9 @@ return {
   opts = {
     ensure_installed = {
       "bash",
+      "css",
+      "dockerfile",
+      "gitignore",
       "html",
       "javascript",
       "json",
@@ -16,13 +19,11 @@ return {
       "python",
       "query",
       "regex",
-      "vim",
-      "yaml",
-      "css",
-      "dockerfile",
-      "gitignore",
       "tsx",
       "typescript",
+      "yaml",
+      "vim",
+      "vue",
       "yaml",
     },
     -- Setting additional_vim_regex_highlighting to true will run `:h syntax` and
