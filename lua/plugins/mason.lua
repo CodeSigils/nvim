@@ -5,7 +5,9 @@ return {
   dependencies = "williamboman/mason.nvim",
   opts = {
     ensure_installed = {
+      "biome",
       "flake8",
+      "goimports",
       "graphql-language-service-cli",
       "html-lsp",
       "htmlhint",
