@@ -5,6 +5,7 @@ return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
     ensure_installed = {
+      "astro",
       "bash",
       "css",
       "dockerfile",
@@ -26,9 +27,9 @@ return {
       "vue",
       "yaml",
     },
-    -- Setting additional_vim_regex_highlighting to true will run `:h syntax` and
-    -- tree-sitter at the same time with a preformance impact. instead of true it
-    -- can also be a list og languages
+    -- Setting additional_vim_regex_highlighting to true will run
+    -- `:h syntax` and tree-sitter at the same time with a preformance
+    -- impact. instead of true it can also be a list og languages
     highlight = { enable = true, additional_vim_regex_highlighting = { "org" } },
     indent = { enable = true },
     incremental_selection = {
@@ -42,9 +43,12 @@ return {
     },
   },
 
-  --- since `vim.tbl_deep_extend`, can only merge tables and not lists, the code above
-  --- would overwrite `ensure_installed` with the new value.
-  --- If you'd rather extend the default config, use the code below instead:
+  -- --- since `vim.tbl_deep_extend`, can only merge tables
+  -- --- and not lists, the code above would overwrite `ensure_installed`
+  -- --- with the new value.
+  -- --- If you'd rather extend the default config, use the code
+  -- --- below instead:
+
   -- {
   --   "nvim-treesitter/nvim-treesitter",
   --   build = ":TSUpdate",
@@ -54,6 +58,7 @@ return {
   --     vim.list_extend(opts.ensure_installed, {
   --       "css",
   --       "dockerfile",
+  --       "html",
   --       "gitignore",
   --       "tsx",
   --       "typescript",
