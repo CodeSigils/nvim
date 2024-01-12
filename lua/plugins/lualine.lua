@@ -1,3 +1,5 @@
+local colorscheme = require("plugins.colorscheme")
+
 -- the opts function can also be used to change the default opts:
 --
 -- return {
@@ -17,7 +19,7 @@ return {
   opts = function(_, opts)
     opts.options = {
       icons_enabled = true,
-      theme = "auto",
+      theme = colorscheme.name,
       component_separators = { left = "|", right = "|" },
       section_separators = { left = "", right = "" },
     }
