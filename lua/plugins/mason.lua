@@ -12,6 +12,8 @@ return {
       "html-lsp",
       "htmlhint",
       "json-lsp",
+      "marksman",
+      "markdownlint",
       "stylua",
       "shellcheck",
       "shfmt",
