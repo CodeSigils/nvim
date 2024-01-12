@@ -68,8 +68,27 @@ local opts = {
   -- textobjects
   --https://www.lazyvim.org/plugins/treesitter#nvim-treesitter-textobjects
   textobjects = {
+    select = {
+      enable = true,
+      lookahead = true,
+      keymaps = {
+        -- You can use the capture groups defined in textobjects.scm
+        ["]f"] = "@function.outer",
+        ["]c"] = "@class.outer",
+        ["[f"] = "@function.inner",
+        ["[c"] = "@class.inner",
+        ["<leader>ic"] = { query = "@class.inner", desc = "Select body of a class" },
+        ["<leader>is"] = { query = "@scope", query_group = "locals", desc = "Select language scope" },
+      },
+      selection_modes = {
+        ["@parameter.outer"] = "v", --charwise
+        ["@function.outer"] = "V", --linewise
+        ["@class.outer"] = "<c-v>", --blockwise
+      },
+    },
     move = {
       enable = true,
+      lookahead = true,
       goto_next_start = { ["]f"] = "@function.outer", ["]c"] = "@class.outer" },
       goto_next_end = { ["]F"] = "@function.outer", ["]C"] = "@class.outer" },
       goto_previous_start = { ["[f"] = "@function.outer", ["[c"] = "@class.outer" },
