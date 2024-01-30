@@ -1,6 +1,5 @@
-return {
+local M = {
   "nvim-tree/nvim-tree.lua",
-  lazy = false,
   dependencies = {
     "nvim-tree/nvim-web-devicons",
   },
@@ -17,7 +16,7 @@ return {
 --     },
 --     filters = {
 --       custom = { ".DS_Store" },
---       dotfiles = false,
+--       dotfiles = true,
 --     },
 --     git = {
 --       ignore = false,
@@ -30,3 +29,18 @@ return {
 -- vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
 -- end,
 -- }
+
+-- function M.config()
+--   require("nvim-tree").setup({
+--     view = {
+--       width = 30,
+--       relativenumber = true,
+--     },
+--     filters = {
+--       custom = { ".DS_Store" },
+--       dotfiles = true,
+--     },
+--   })
+-- end
+
+return M

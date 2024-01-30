@@ -1,5 +1,6 @@
 -- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Default keymaps that are always set:
+-- https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local map = vim.keymap.set
 
@@ -28,3 +29,5 @@ map("n", "<leader>|", "<C-W>v", { desc = "Split window right", remap = true })
 -- tailwind utils
 map({ "n", "x" }, "j", "gj")
 map({ "n", "x" }, "k", "gk")
+
+map({ "n", "x" }, "g.", "<cmd>Browse<cr>", { desc = "Browse URL", remap = true })
