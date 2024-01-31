@@ -8,6 +8,8 @@ return {
       "biome",
       "flake8",
       "goimports",
+      "prettier",
+      "prettierd",
       "graphql-language-service-cli",
       "html-lsp",
       "htmlhint",
