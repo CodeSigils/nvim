@@ -31,3 +31,8 @@ map({ "n", "x" }, "j", "gj")
 map({ "n", "x" }, "k", "gk")
 
 map({ "n", "x" }, "g.", "<cmd>Browse<cr>", { desc = "Browse URL", remap = true })
+
+-- Markdown preview
+map({ "n", "x" }, "mp", "<cmd>MarkdownPreview<cr>", { desc = " Markdown preview" })
+map({ "n", "x" }, "mp", "<cmd>MarkdownPreviewStop<cr>", { desc = " Markdown preview" })
+map({ "n", "x" }, "mt", "<cmd>MarkdownPreviewToggle<cr>", { desc = " Markdown preview" })
