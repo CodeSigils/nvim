@@ -38,8 +38,8 @@ map({ "n", "x" }, "mp", "<cmd>MarkdownPreviewStop<cr>", { desc = "Markdown previ
 map({ "n", "x" }, "mt", "<cmd>MarkdownPreviewToggle<cr>", { desc = "Markdown preview" })
 
 -- zen mode: true-zen plugin
--- map({ "n" }, "<leader>zn", "<cmd>TZNarrow<cr>", { desc = "Zen narrow" })
--- map({ "v" }, "<leader>zn", "<cmd>'<,'>TZNarrow<cr>", { desc = "Zen narrow left-right" })
--- map({ "n" }, "<leader>zf", "<cmd>TZFocus<cr>", { desc = "Zen focus" })
--- map({ "n" }, "<leader>zm", "<cmd>TZMinimalist<cr>", { desc = "Zen minimalist" })
--- map({ "n" }, "<leader>za", "<cmd>TZAtaraxis<cr>", { desc = "Zen ataraxis" })
+map({ "n" }, "<leader>zn", "<cmd>TZNarrow<cr>", { desc = "Zen narrow" })
+map({ "v" }, "<leader>zn", "<cmd>'<,'>TZNarrow<cr>", { desc = "Zen narrow left-right" })
+map({ "n" }, "<leader>zf", "<cmd>TZFocus<cr>", { desc = "Zen focus" })
+map({ "n" }, "<leader>zm", "<cmd>TZMinimalist<cr>", { desc = "Zen minimalist" })
+map({ "n" }, "<leader>za", "<cmd>TZAtaraxis<cr>", { desc = "Zen ataraxis" })
