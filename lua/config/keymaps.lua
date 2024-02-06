@@ -34,8 +34,8 @@ map({ "n", "x" }, "g.", "<cmd>Browse<cr>", { desc = "Browse URL", remap = true }
 
 -- Markdown preview
 map({ "n", "x" }, "mp", "<cmd>MarkdownPreview<cr>", { desc = "Markdown preview" })
-map({ "n", "x" }, "mp", "<cmd>MarkdownPreviewStop<cr>", { desc = "Markdown preview" })
-map({ "n", "x" }, "mt", "<cmd>MarkdownPreviewToggle<cr>", { desc = "Markdown preview" })
+map({ "n", "x" }, "ms", "<cmd>MarkdownPreviewStop<cr>", { desc = "Markdown stop" })
+map({ "n", "x" }, "mt", "<cmd>MarkdownPreviewToggle<cr>", { desc = "Markdown toggle" })
 
 -- zen mode: true-zen plugin
 map({ "n" }, "<leader>zn", "<cmd>TZNarrow<cr>", { desc = "Zen narrow" })
