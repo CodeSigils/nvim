@@ -12,14 +12,20 @@ Markdown with `marksman`, `markdownlint` and `markdown_inline`
 - Stop preview with `<leader>ms`
 - Toggle preview with `<leader>mt`
 
+Code-block sample:
+
 ```bash
-apt update
+if [ -f "$HOME/.bash_aliases" ]
+  then
+    source "$HOME/.bash_aliases"
+fi
 ```
 
 ## TODO
 
 `mdx` syntax setup in tree-sitter in `./lua/plugins/treesitter.lua`
-passing opts to configuration:
+passing opts to configuration is only working on a basic level.
+Investigate:
 
 ```lua
 return {
@@ -33,8 +39,10 @@ return {
         extension = {
           mdx = "markdown.mdx",
         },
-        filename = {},
-        pattern = {},
+        filename = {
+        },
+        pattern = {
+        },
       })
       vim.treesitter.language.register("markdown", "mdx")
     end,
