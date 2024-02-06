@@ -131,8 +131,10 @@ local M = {
       -- MDX
       vim.filetype.add({
         extension = {
-          mdx = "mdx",
+          mdx = "markdown.mdx",
         },
+        filename = {},
+        pattern = {},
       })
       vim.treesitter.language.register("markdown", "mdx")
     end,
