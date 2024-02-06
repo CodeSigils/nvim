@@ -1,19 +1,18 @@
 -- add any tools you want to have installed below
 return {
   "williamboman/mason.nvim",
-  event = "BufReadPre",
-  dependencies = "williamboman/mason.nvim",
-  opts = {
-    ensure_installed = {
+  event = { "BufReadPre" },
+  opts = function(_, opts)
+    vim.list_extend(opts.ensure_installed, {
       "biome",
+      "css-lsp",
       "flake8",
       "goimports",
+      "html-lsp",
       "prettier",
       "prettierd",
       "graphql-language-service-cli",
-      "html-lsp",
-      "htmlhint",
-      "json-lsp",
+      "luacheck",
       "marksman",
       "markdownlint",
       "stylua",
@@ -22,8 +21,7 @@ return {
       "tailwindcss-language-server",
       "typescript-language-server",
       "yaml-language-server",
-      "yamlfix",
-    },
-    automatic_installation = true,
-  },
+      "yamlfmt",
+    })
+  end,
 }

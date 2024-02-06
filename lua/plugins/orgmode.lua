@@ -15,6 +15,7 @@ return {
   dependencies = {
     { "nvim-treesitter/nvim-treesitter", lazy = true },
     -- { "akinsho/org-bullets.nvim", lazy = true },
+    -- { "dhruvasagar/vim-table-mode", lazy = true }
   },
   event = "VeryLazy",
   config = function()
