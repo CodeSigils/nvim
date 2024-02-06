@@ -12,13 +12,16 @@ Markdown with `marksman`, `markdownlint` and `markdown_inline`
 - Stop preview with `<leader>ms`
 - Toggle preview with `<leader>mt`
 
-Code-block sample:
+Remove or make a backup current Neovim directories:
 
 ```bash
-if [ -f "$HOME/.bash_aliases" ]
-  then
-    source "$HOME/.bash_aliases"
-fi
+# required
+mv ~/.config/nvim{,.bak}
+
+# optional but recommended
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
 ```
 
 ## TODO
