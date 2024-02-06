@@ -103,6 +103,12 @@ vim.o.formatexpr = "v:lua.require'lazyvim.util'.format.formatexpr()"
 
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
+-- Markdown conceal
+vim.g.vim_markdown_folding_level = 1
+vim.g.vim_markdown_conceal = 1
+-- vim.g.vim_markdown_initial_foldlevel = 1 -- initial folding
+vim.g.vim_markdown_folding_disabled = 1 -- disable folding
+vim.g.vim_markdown_conceal_code_blocks = 2
 
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd([[set iskeyword+=-]])
