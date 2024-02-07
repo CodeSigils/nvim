@@ -4,13 +4,7 @@ Personal Neovim setup based and extends on 💤 [LazyVim](https://github.com/Laz
 
 - Refer to the [documentation](https://lazyvim.github.io/installation) to learn more.
 
-## Markdown
-
-Markdown with `marksman`, `markdownlint` and `markdown_inline`
-
-- Start preview with `<leader>mp`
-- Stop preview with `<leader>ms`
-- Toggle preview with `<leader>mt`
+## Pre-installation
 
 Remove or make a backup current Neovim directories:
 
@@ -23,6 +17,14 @@ mv ~/.local/share/nvim{,.bak}
 mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 ```
+
+## Markdown and mdx
+
+Markdown with `marksman`, `markdownlint` and `markdown_inline`
+
+- Start preview with `<leader>mp`
+- Stop preview with `<leader>ms`
+- Toggle preview with `<leader>mt`
 
 ## TODO
 
