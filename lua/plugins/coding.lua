@@ -1,3 +1,4 @@
+-- https://github.com/smjonas/inc-rename.nvim
 -- Incremental rename
 return {
   "smjonas/inc-rename.nvim",
