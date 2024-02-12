@@ -9,12 +9,14 @@ local M = {
     "saadparwaiz1/cmp_luasnip", -- for autocompletion
     "rafamadriz/friendly-snippets", -- useful snippets
     "onsails/lspkind.nvim", -- vs-code like pictograms -- https://github.com/onsails/lspkind.nvim
+    { "jackieaskins/cmp-emmet", build = "npm run release" },
   },
 }
 
 function M.config()
   local cmp = require("cmp")
-  local luasnip = require("luasnip").init
+  -- local luasnip = require("luasnip").init
+  local luasnip = require("luasnip")
   local lspkind = require("lspkind")
   -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
   require("luasnip.loaders.from_vscode").lazy_load()
@@ -39,13 +41,36 @@ function M.config()
     }),
     -- sources for autocompletion
     sources = cmp.config.sources({
-      { name = "nvim_lsp" },
-      { name = "luasnip" }, -- snippets
+      { name = "nvim_lsp", keyword_length = 1 },
+      { name = "luasnip", keyword_length = 2 }, -- snippets
       { name = "buffer" }, -- text within current buffer
       { name = "path" }, -- file system paths
+      {
+        name = "emmet",
+        option = {
+          filetypes = {
+            "css",
+            "html",
+            "javascript",
+            "javascriptreact",
+            "typescriptreact",
+            "less",
+            "heex",
+            "sass",
+            "scss",
+            "tsx",
+            "jsx",
+            "svelte",
+            "pug",
+            "vue",
+          },
+        },
+      },
     }),
     -- configure lspkind for vs-code like pictograms in completion menu
     formatting = {
+      fields = { "menu", "abbr", "kind" },
+      expandable_indicator = true,
       format = lspkind.cmp_format({
         maxwidth = 50,
         ellipsis_char = "...",
