@@ -66,7 +66,6 @@ return {
   opts = function()
     return {
       keys = {
-        -- vim.keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>"),
         vim.keymap.set({ "n" }, "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Telescope keymaps" }),
       },
     }
