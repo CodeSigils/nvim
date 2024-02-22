@@ -7,6 +7,7 @@ return {
     flash = true,
     gitsigns = true,
     headlines = true,
+    harpoon = true,
     illuminate = true,
     indent_blankline = { enabled = true },
     leap = true,
