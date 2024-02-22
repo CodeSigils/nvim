@@ -53,6 +53,10 @@ return {
           theme = "dropdown",
           previewer = false,
         },
+        buffers = {
+          theme = "dropdown",
+          previewer = false,
+        },
         keymaps = {
           theme = "dropdown",
         },
