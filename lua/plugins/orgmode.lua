@@ -19,9 +19,6 @@ return {
   },
   event = "VeryLazy",
   config = function()
-    -- Load treesitter grammar for org
-    require("orgmode").setup_ts_grammar()
-
     -- Setup treesitter - better setup in ./treesitter.lua
     -- require("nvim-treesitter.configs").setup({
     --   highlight = {
